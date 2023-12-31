@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManageInventoryController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="178.0" layoutY="74.0" prefHeight="63.0" prefWidth="159.0" text="Inventory" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="32.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #ed1b24;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:resources/images/logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="63.0" prefWidth="92.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="rbtn" layoutX="93.0" layoutY="16.0" mnemonicParsing="false" onAction="#restockInventory" prefHeight="34.0" prefWidth="100.0" style="-fx-background-color: #fbeae6;" text="Restock">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="hbtn" layoutX="6.0" layoutY="16.0" mnemonicParsing="false" onAction="#goToEmployeeAccount" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #fbeae6;" text="Home">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="19.0" layoutY="153.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <TextArea fx:id="t1" layoutX="13.0" layoutY="7.0" prefHeight="137.0" prefWidth="124.0" />
+            <ImageView fitHeight="137.0" fitWidth="122.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/clip.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="175.0" layoutY="153.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <TextArea fx:id="t2" layoutX="13.0" layoutY="7.0" prefHeight="137.0" prefWidth="124.0" />
+            <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="19.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/envelope.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="337.0" layoutY="153.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <TextArea fx:id="t3" layoutX="13.0" layoutY="7.0" prefHeight="137.0" prefWidth="124.0" />
+            <ImageView fitHeight="113.0" fitWidth="115.0" layoutX="21.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/post-stamp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="19.0" layoutY="315.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <TextArea fx:id="t4" layoutX="13.0" layoutY="7.0" prefHeight="137.0" prefWidth="124.0" />
+            <ImageView fitHeight="113.0" fitWidth="122.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/stamp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="175.0" layoutY="315.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <TextArea fx:id="t5" layoutX="13.0" layoutY="7.0" prefHeight="137.0" prefWidth="124.0" />
+            <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="19.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/office-material.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="337.0" layoutY="315.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <TextArea fx:id="t6" layoutX="13.0" layoutY="7.0" prefHeight="137.0" prefWidth="124.0" />
+            <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="19.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/paper.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

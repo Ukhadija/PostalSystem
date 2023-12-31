@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpController">
+   <children>
+      <VBox prefHeight="503.0" prefWidth="100.0" style="-fx-background-color: #ed1b24;" />
+      <Label layoutX="232.0" layoutY="31.0" text="SignUp">
+         <font>
+            <Font name="Cambria" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="100.0" text="Name">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="140.0" text="Address">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ntxt" layoutX="170.0" layoutY="98.0" prefHeight="31.0" prefWidth="285.0" promptText="Enter Your Name" />
+      <TextField fx:id="atxt" layoutX="190.0" layoutY="138.0" prefHeight="31.0" prefWidth="266.0" promptText="Enter Your Address" />
+      <Button fx:id="btn" layoutX="360.0" layoutY="424.0" mnemonicParsing="false" onAction="#SIgnUp" prefHeight="38.0" prefWidth="92.0" text="SignUp" />
+      <Label layoutX="120.0" layoutY="180.0" text="Phone Number">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="220.0" prefHeight="22.0" prefWidth="45.0" text="Email">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="260.0" text="CNIC">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="300.0" text="Username">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="340.0" text="Password">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numtxt" layoutX="242.0" layoutY="178.0" prefHeight="31.0" prefWidth="212.0" promptText="Enter Your Phone Number" />
+      <TextField fx:id="etxt" layoutX="171.0" layoutY="218.0" prefHeight="31.0" prefWidth="285.0" promptText="Enter Email" />
+      <TextField fx:id="ctxt" layoutX="171.0" layoutY="258.0" prefHeight="31.0" prefWidth="285.0" promptText="Enter CNIC" />
+      <TextField fx:id="utxt" layoutX="205.0" layoutY="298.0" prefHeight="31.0" prefWidth="252.0" promptText="Set Username" />
+      <Label layoutX="120.0" layoutY="380.0" text="Confirm Password">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="ptxt" layoutX="205.0" layoutY="338.0" prefHeight="31.0" prefWidth="252.0" promptText="Enter Password" />
+      <PasswordField fx:id="cptxt" layoutX="266.0" layoutY="378.0" prefHeight="31.0" prefWidth="192.0" promptText="ReEnter Password" />
+      <Hyperlink fx:id="blink" layoutX="427.0" layoutY="16.0" onAction="#goToHome" text="Back" underline="true">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Hyperlink>
+      <TextArea fx:id="tArea" layoutX="136.0" layoutY="428.0" prefHeight="30.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterParcelController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="130.0" layoutY="53.0" prefHeight="63.0" prefWidth="241.0" text="Register Parcel" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="32.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="53.0" prefWidth="500.0" style="-fx-background-color: #ed1b24;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:resources/images/logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="63.0" prefWidth="87.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="Hbtn" layoutX="111.0" layoutY="10.0" mnemonicParsing="false" onAction="#goToUserAccount" prefHeight="20.0" prefWidth="82.0" style="-fx-background-color: #fbeae6;" text="Home">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+      <Label layoutX="60.0" layoutY="120.0" text="Weight">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="185.0" text="Mailing Address">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="250.0" text="Destination Address">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="315.0" text="Reciever Name">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="380.0" text="Reciever Contact">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="440.0" text="Urgent">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="wtxt" layoutX="60.0" layoutY="145.0" prefHeight="31.0" prefWidth="367.0" promptText="Enter Parcel Weight in kg" />
+      <TextField fx:id="mtxt" layoutX="60.0" layoutY="210.0" prefHeight="31.0" prefWidth="367.0" promptText="Enter Mailing Address" />
+      <TextField fx:id="dtxt" layoutX="60.0" layoutY="275.0" prefHeight="31.0" prefWidth="367.0" promptText="Enter Destination Address" />
+      <TextField fx:id="rntxt" layoutX="60.0" layoutY="340.0" prefHeight="31.0" prefWidth="367.0" promptText="Enter Reciever Name" />
+      <TextField fx:id="rctxt" layoutX="60.0" layoutY="400.0" prefHeight="31.0" prefWidth="367.0" promptText="Enter Reciever Phone Number" />
+      <CheckBox fx:id="ucheck" layoutX="140.0" layoutY="440.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="19.0" />
+      <Button fx:id="rbtn" layoutX="319.0" layoutY="451.0" mnemonicParsing="false" onAction="#goToPayment" prefHeight="31.0" prefWidth="104.0" text="Register">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

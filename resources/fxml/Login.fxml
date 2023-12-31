@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="100.0" style="-fx-background-color: #ed1b24;" />
+      <AnchorPane layoutX="100.0" layoutY="44.0" prefHeight="435.0" prefWidth="388.0">
+         <children>
+            <Label layoutX="26.0" layoutY="19.0" text="Login">
+               <font>
+                  <Font name="Cambria" size="42.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="93.0" text="Username">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="utxt" layoutX="33.0" layoutY="121.0" prefHeight="31.0" prefWidth="300.0" promptText="Enter Username" />
+            <Label layoutX="39.0" layoutY="178.0" text="Password">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="Lbtn" layoutX="241.0" layoutY="257.0" mnemonicParsing="false" onAction="#Login" prefHeight="38.0" prefWidth="92.0" text="Login" />
+            <Hyperlink fx:id="emplink" layoutX="33.0" layoutY="262.0" onAction="#goToLoginEmployee" text="Login as Employee" underline="true">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Hyperlink>
+            <PasswordField fx:id="ptxt" layoutX="33.0" layoutY="210.0" prefHeight="31.0" prefWidth="300.0" promptText="Enter Password" />
+         </children>
+      </AnchorPane>
+      <Hyperlink fx:id="blink" layoutX="425.0" layoutY="14.0" onAction="#goToHome" text="Back" textFill="#0d0d0d" underline="true">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

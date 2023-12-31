@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="407.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ThankYouController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="88.0" layoutY="157.0" prefHeight="63.0" prefWidth="324.0" text="Thanks for Using" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="40.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #ed1b24;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="78.0" fitWidth="185.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:resources/images/logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="63.0" prefWidth="95.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="hbtn" layoutX="100.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToUserAccount" prefHeight="35.0" prefWidth="87.0" style="-fx-background-color: #fbeae6;" text="Home">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+      <Label contentDisplay="CENTER" layoutX="139.0" layoutY="204.0" prefHeight="63.0" prefWidth="223.0" text="Our Service" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

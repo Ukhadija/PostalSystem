@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PaymentController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="179.0" layoutY="76.0" prefHeight="63.0" prefWidth="143.0" text="Payment" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="32.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #ed1b24;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:resources/images/logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="63.0" prefWidth="87.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Hyperlink fx:id="blink" layoutX="136.0" layoutY="19.0" onAction="#goToUserAccount" text="Back" underline="true">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Hyperlink>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+      <Label layoutX="64.0" layoutY="148.0" text="Select Method">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="291.0" text="Account No">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Atxt" layoutX="64.0" layoutY="325.0" prefHeight="34.0" prefWidth="365.0" promptText="Enter Account No" />
+      <Button fx:id="Pbtn" layoutX="287.0" layoutY="384.0" mnemonicParsing="false" onAction="#makePayment" prefHeight="34.0" prefWidth="143.0" text="Make Payment">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="Mbtn" layoutX="98.0" layoutY="178.0" mnemonicParsing="false" text="MasterCard">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Ebtn" layoutX="98.0" layoutY="211.0" mnemonicParsing="false" text="EasyPaisa">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Sbtn" layoutX="98.0" layoutY="243.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="87.0" text="SadaPay">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserAccountController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="149.0" layoutY="75.0" prefHeight="63.0" prefWidth="202.0" text="Our Services" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="32.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #ed1b24;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="184.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:resources/images/logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="Lbtn" layoutX="71.0" layoutY="15.0" mnemonicParsing="false" onAction="#Logout" prefHeight="21.0" prefWidth="82.0" style="-fx-background-color: #fbeae6;" text="Logout">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="43.0" layoutY="149.0" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <Button fx:id="rbtn" layoutX="18.0" layoutY="101.0" mnemonicParsing="false" onAction="#goToRegisterParcel" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: #ed1b24;" text="Register Parcel" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="100.0" fitWidth="184.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/mail-box.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="275.0" layoutY="149.0" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <Button fx:id="Tbtn" layoutX="18.0" layoutY="101.0" mnemonicParsing="false" onAction="#goToTrackParcel" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: #ed1b24;" text="Track Parcel" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/parcel.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="43.0" layoutY="318.0" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <Button fx:id="Obtn" layoutX="18.0" layoutY="101.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: #ed1b24;" text="Order Supplies" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="100.0" fitWidth="202.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/inventory.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="275.0" layoutY="318.0" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <Button fx:id="Cbtn" layoutX="18.0" layoutY="101.0" mnemonicParsing="false" onAction="#goToCustomerService" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: #ed1b24;" text="Customer Service" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="100.0" fitWidth="94.0" layoutX="45.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/customer-service.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

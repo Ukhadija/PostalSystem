@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerServiceController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="112.0" layoutY="100.0" prefHeight="63.0" prefWidth="276.0" text="Customer Service" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="32.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #ed1b24;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:resources/images/logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="hbtn" layoutX="57.0" layoutY="15.0" mnemonicParsing="false" onAction="#goToUserAccount" prefHeight="21.0" prefWidth="82.0" style="-fx-background-color: #fbeae6;" text="Home">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+      <Label layoutX="65.0" layoutY="185.0" text="Enter Query">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="qtxt" layoutX="62.0" layoutY="216.0" prefHeight="47.0" prefWidth="376.0" promptText="Enter Query" />
+      <Button fx:id="sbtn" layoutX="341.0" layoutY="279.0" mnemonicParsing="false" onAction="#activateService" prefHeight="34.0" prefWidth="94.0" text="Send">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="tArea" layoutX="62.0" layoutY="333.0" prefHeight="131.0" prefWidth="376.0" promptText="Your response will appear here" />
+   </children>
+</AnchorPane>

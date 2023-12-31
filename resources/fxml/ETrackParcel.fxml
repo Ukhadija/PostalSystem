@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ETrackParcelController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="83.0" layoutY="93.0" prefHeight="63.0" prefWidth="367.0" text="Update Tracking Status" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="32.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #ed1b24;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="57.0" fitWidth="167.0" layoutX="6.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:resources/images/Logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="hbtn" layoutX="64.0" layoutY="15.0" mnemonicParsing="false" onAction="#goToEmployeeAccount" prefHeight="21.0" prefWidth="82.0" style="-fx-background-color: #fbeae6;" text="Home">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+      <Label layoutX="60.0" layoutY="210.0" prefHeight="22.0" prefWidth="97.0" text="Tracking ID">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="itxt" layoutX="163.0" layoutY="205.0" prefHeight="31.0" prefWidth="277.0" promptText="Enter Parcel Tracking ID" />
+      <Button fx:id="tbtn" layoutX="332.0" layoutY="366.0" mnemonicParsing="false" onAction="#addTrackingDetails" prefHeight="34.0" prefWidth="108.0" text="Update">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="60.0" layoutY="256.0" prefHeight="22.0" prefWidth="127.0" text="Tracking Detail">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dtxt" layoutX="60.0" layoutY="282.0" prefHeight="63.0" prefWidth="383.0" />
+   </children>
+</AnchorPane>

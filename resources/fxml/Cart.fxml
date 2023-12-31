@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CartController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="43.0" layoutY="108.0" prefHeight="63.0" prefWidth="115.0" text="Cart" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="42.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #ed1b24;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:resources/images/logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="ibtn" layoutX="27.0" layoutY="15.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #fbeae6;" text="Inventory">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="43.0" layoutY="190.0" prefHeight="91.0" prefWidth="411.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <TextArea fx:id="t1" layoutX="14.0" layoutY="14.0" prefHeight="63.0" prefWidth="304.0" />
+            <TextField fx:id="q1" layoutX="344.0" layoutY="30.0" prefHeight="31.0" prefWidth="29.0" text="1" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="43.0" layoutY="297.0" prefHeight="91.0" prefWidth="411.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <TextArea fx:id="t2" layoutX="14.0" layoutY="17.0" prefHeight="63.0" prefWidth="304.0" />
+            <TextField fx:id="q2" layoutX="346.0" layoutY="34.0" prefHeight="31.0" prefWidth="29.0" text="1" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="pbtn" layoutX="287.0" layoutY="411.0" mnemonicParsing="false" onAction="#goToPayment" prefHeight="34.0" prefWidth="167.0" text="Proceed to Payment">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

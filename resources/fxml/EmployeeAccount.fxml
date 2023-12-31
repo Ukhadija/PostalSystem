@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeAccountController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="114.0" layoutY="117.0" prefHeight="63.0" prefWidth="273.0" text="Servcies Provided" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="32.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #ed1b24;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="102.0" fitWidth="200.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:resources/images/logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="Lbtn" layoutX="54.0" layoutY="15.0" mnemonicParsing="false" onAction="#Logout" prefHeight="21.0" prefWidth="82.0" style="-fx-background-color: #fbeae6;" text="Logout">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="40.0" layoutY="234.0" prefHeight="170.0" prefWidth="180.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <Button fx:id="mbtn" layoutX="11.0" layoutY="121.0" mnemonicParsing="false" onAction="#goToManageInventory" prefHeight="35.0" prefWidth="159.0" style="-fx-background-color: #ed1b24;" text="Manage Inventory" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="32.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/inventory.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="277.0" layoutY="234.0" prefHeight="170.0" prefWidth="180.0" style="-fx-background-color: #fbeae6;">
+         <children>
+            <Button fx:id="tbtn" layoutX="11.0" layoutY="121.0" mnemonicParsing="false" onAction="#goToEtrackParcel" prefHeight="35.0" prefWidth="159.0" style="-fx-background-color: #ed1b24;" text="Track Parcel" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="32.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/images/parcel.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
